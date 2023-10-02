@@ -1,3 +1,5 @@
+const fetch = require('node-fetch');
+
 const handleAPIFaceDetection = (req, res) => {
     const { imageURL } = req.body;
 
