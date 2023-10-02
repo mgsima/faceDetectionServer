@@ -13,11 +13,11 @@ const { handleAPIFaceDetection } = require('./controllers/APIFaceDetection');
 const db = knex({
     client: 'pg',
     connection: {
-      host : '127.0.0.1',   //localhost
+      host : 'dpg-ckd9tsdjhfbs73dsst80-a',   //localhost
       port : 5432,
-      user : 'postgres',
-      password : 'manuel1995',
-      database : 'smart-brain'
+      user : 'msimarro',
+      password : '3pH9myKRo0SYmTjZhxqwX8u6cEFc8ogL',
+      database : 'dbfacedetection'
     }
   });
 
