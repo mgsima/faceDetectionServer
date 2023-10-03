@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 
 
-const handleAPIFaceDetection = (req, res) => {
+export const handleAPIFaceDetection = (req, res) => {
     const { imageURL } = req.body;
 
     function APIsetting(imageURL) {
@@ -50,6 +50,3 @@ const handleAPIFaceDetection = (req, res) => {
         .catch(err => res.status(500).json('Error with the API call'));
 }
 
-module.exports = {
-    handleAPIFaceDetection: handleAPIFaceDetection
-}
