@@ -1,9 +1,9 @@
-//const fetch = require('node-fetch');
-import fetch from 'node-fetch';
 
 
 const handleAPIFaceDetection = (req, res) => {
-    const { imageURL } = req.body;
+  const { imageURL } = req.body;
+  const fetch = require('node-fetch');
+  //import fetch from 'node-fetch';
 
     function APIsetting(imageURL) {
         const PAT = 'bc6cecffb75d4cd492b60e0ac371ba22';
