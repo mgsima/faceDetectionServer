@@ -7,7 +7,8 @@ const { handleRegister } = require('./controllers/register');
 const { handleSignIn } = require('./controllers/signin');
 const { handleProfile } = require('./controllers/profile');
 const { handleImage } = require('./controllers/image');
-const { handleAPIFaceDetection } = require('./controllers/APIFaceDetection');
+// const { handleAPIFaceDetection } = require('./controllers/APIFaceDetection');
+import { handleAPIFaceDetection } from './controllers/APIFaceDetection';
 
 
 const db = knex({
