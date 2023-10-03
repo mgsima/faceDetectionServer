@@ -1,5 +1,9 @@
-import fetch from 'node-fetch';
+let fetch;
 
+// Dynamic import
+import('node-fetch').then(module => {
+  fetch = module.default;
+});
 
 const handleAPIFaceDetection = (req, res) => {
   const { imageURL } = req.body;
