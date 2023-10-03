@@ -10,7 +10,7 @@ const handleAPIFaceDetection = (req, res) => {
   //const fetch = require('node-fetch');
 
     function APIsetting(imageURL) {
-        const PAT = 'bc6cecffb75d4cd492b60e0ac371ba22';
+        const PAT = process.env.PAT;
         const USER_ID = 'clarifai';       
         const APP_ID = 'main';
         const MODEL_ID = 'face-detection';

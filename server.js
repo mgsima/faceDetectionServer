@@ -17,7 +17,7 @@ const db = knex({
       host : 'dpg-ckd9tsdjhfbs73dsst80-a',   //localhost
       port : 5432,
       user : 'msimarro',
-      password : '3pH9myKRo0SYmTjZhxqwX8u6cEFc8ogL',
+      password : process.env.DATABASE_PASSWORD,
       database : 'dbfacedetection'
     }
   });
@@ -40,5 +40,5 @@ app.put('/image', (req, res) => {handleImage(req, res, db)})
 app.post('/APIFaceDetection', (req, res) => {handleAPIFaceDetection(req, res)});
 
 
-app.listen(3000, () => {console.log('app is running on port 3000')})
+app.listen(process.env.PORT || 3000, () => {console.log('app is running on port ${process.env.PORT}')})
 
